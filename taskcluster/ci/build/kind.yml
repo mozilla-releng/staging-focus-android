@@ -88,15 +88,15 @@ jobs:
         treeherder:
             symbol: nightly(B)
 
-    beta:
-        description: 'Beta focus build for debugging'
-        run-on-tasks-for: [github-pull-request]
-        run:
-            gradle-build-type: beta
-            gradle-build-name: focusBeta
-            gradle-build: focus
-        treeherder:
-            symbol: beta(B)
+    # beta:
+    #     description: 'Beta focus build for debugging'
+    #     run-on-tasks-for: [github-pull-request]
+    #     run:
+    #         gradle-build-type: beta
+    #         gradle-build-name: focusBeta
+    #         gradle-build: focus
+    #     treeherder:
+    #         symbol: beta(B)
 
 
     # TODO modify release, nightly and beta (focus only for the latter two) for signing and push-apk
