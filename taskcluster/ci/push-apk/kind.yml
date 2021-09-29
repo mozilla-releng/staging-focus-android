@@ -30,7 +30,8 @@ job-template:
         channel:
             by-build-type:
                 nightly: nightly
-                release: release
+                focus-release: focus-release
+                klar-release: klar-release
         dep:
             by-level:
                 '3': false

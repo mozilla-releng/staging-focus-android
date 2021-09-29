@@ -59,7 +59,9 @@ jobs:
             symbol: debug(Bkl)
 
     focus-release:
-        description: 'Release Focus build for debugging'
+        description: 'Release Focus build'
+        attributes:
+            release-type: release
         run-on-tasks-for: [github-pull-request]
         run:
             gradle-build-type: release
@@ -69,7 +71,9 @@ jobs:
             symbol: release(Bf)
 
     klar-release:
-        description: 'Release Klar build for debugging'
+        description: 'Release Klar build'
+        attributes:
+            release-type: release
         run-on-tasks-for: [github-pull-request]
         run:
             gradle-build-type: release
