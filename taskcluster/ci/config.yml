@@ -42,7 +42,7 @@ workers:
             provisioner: scriptworker-k8s
             implementation: scriptworker-github
             os: scriptworker
-            worker-type: 'mobile-{level}-github'
+            worker-type: mobile-1-github-dev
         images:
             provisioner: 'mobile-{level}'
             implementation: docker-worker
